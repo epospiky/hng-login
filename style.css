@@ -1,4 +1,4 @@
-	* {
+* {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -8,8 +8,6 @@
   padding: 0;
 }
 body {
-  margin: 0;
-  padding: 0;
   font-family: roboto;
  
 }
@@ -20,7 +18,7 @@ main{
 	height: 100vh;
 }
 .section-a{
-	background-color: #219653;
+	background-color: blue;
 	grid-area: section-a;
 	display: flex;
 	flex-direction: column;
@@ -37,29 +35,29 @@ main{
 .left-title{
 	font-weight: 300;
 	margin-top: -10rem;
-	margin-bottom: 5rem;
+	margin-bottom: 20px;
 	color: white;
 }
 .together{
-	color: white;
+	color:#c4c4c4;
 }
 .sign-up{
 	text-decoration: none;
 	color: white;
 	border: 1px solid #e0e0e0;
-	margin-top: 3rem;
+	margin-top: 20px;
 	padding: 1rem 1.9rem;
 	transition:all 0.4s;
 }
 .sign-up:hover{
 	background-color: #e0e0e0;
-	color: #219653;
+	color: blue;
 }
 .containertwo{
 	width: 70%;
 	height: 700px;	
 	float: right;
-	padding-top: 100px;
+	padding-top: 150px;
 	text-align: center;
     padding-left: 100px;
 
@@ -80,12 +78,12 @@ input[type=password], input[type=email]{
 }
 .head{
 	font-size: 24px;
-	color: #219653;
+	color: blue;
 }
 input[type=submit]{
 	width: 30%;
 	height: 50px;
-	background-color: #219653;
+	background-color: blue;
 	color: #c4c4c4;
 	cursor: pointer;
 	border: none;
@@ -98,6 +96,6 @@ input[type=submit]{
 }
 a{
 	text-decoration: none;
-	color: #219653;
+	color: blue;
 }
 	
