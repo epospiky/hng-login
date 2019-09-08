@@ -39,36 +39,36 @@ main{
 	color: white;
 }
 .together{
-	color:#c4c4c4;
+	color: white;
+	font-size: 17px;
 }
-.sign-up{
+.sign{
 	text-decoration: none;
 	color: white;
-	border: 1px solid #e0e0e0;
-	margin-top: 20px;
-	padding: 1rem 1.9rem;
-	transition:all 0.4s;
+	background: blue;
+	padding: 15px 30px 15px 30px;
 }
-.sign-up:hover{
-	background-color: #e0e0e0;
-	color: blue;
+.sign:hover{
+	background-color: lightgreen;
+	color: white;
+	text-decoration: none;
 }
 .containertwo{
 	width: 70%;
 	height: 700px;	
 	float: right;
-	padding-top: 150px;
+	padding-top: 50px;
 	text-align: center;
     padding-left: 100px;
 
 }
-input[type=password], input[type=email]{
+.input{
 	width: 317px;
 	height: 67px;
 	padding: 15px;
 	margin-top: 6px;
 	margin-bottom: 25px;
-	background-color: #c4c4c4;
+	background-color: white;
 	border: none;
 	color: black;
 }
@@ -80,22 +80,51 @@ input[type=password], input[type=email]{
 	font-size: 24px;
 	color: blue;
 }
-input[type=submit]{
-	width: 30%;
-	height: 50px;
-	background-color: blue;
-	color: #c4c4c4;
-	cursor: pointer;
-	border: none;
+.submit{
+	text-decoration: none;
+	color: white;
+	border: 1px solid #e0e0e0;
+	padding:12px 30px 12px 30px;
+	transition:all 0.4s;
+}
+.submit:hover{
+	color: white;
+	text-decoration: none;
+	background-color: lightgreen;
 }
 .user{
-	padding-top: 20px;	
+	padding-top: 30px;	
 }
 .create{
 	margin-top: -10px;
 }
-a{
+.log{
 	text-decoration: none;
+	color: white;
+
+}
+.log:hover{
+	color: white;
+	text-decoration: none;
+}
+.fill{
+	width: 317px;
+	height: 67px;
+	padding: 15px;
+	margin-top: 6px;
+	margin-bottom: 25px;
+	background-color: #c4c4c4;
+	border: none;
+	color: black;
+}
+.mem{
+	padding-top: 20px;
+}
+.below{
 	color: blue;
 }
-	
+.below:hover{
+	text-decoration: none;
+	color: green;
+}
+
