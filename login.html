@@ -9,32 +9,26 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="row">
-		<div class="col-md-5 left-col">
-			<h3>WELCOME BACK!</h3>
-			<p>To keep connected with us please login with your personal info</p>
-			<a href="#" class="signup">SING UP</a>
-		</div>
-		<div class="col-md-7 right-col" >
-			<h3>LOGIN</h3>
-			<p>Login to your account</p>
-			<form id="login_form">
-				
-					<div class="input-group">
-						<input type = "text"  placeholder="Email" required>
-						<i class=" fa fa-lg fa-envelope" ></i>
-					</div>
-				
-				
-					<div class="input-group">
-						<input type = "password"  placeholder="Password" required>
-						<i class=" fa fa-lg fa-lock" aria-hidden="true"></i>
-					</div>
-			
-				<input type="submit" value="Login" class="btn btn-primary" name = "login">
-			</form>
-			<span>New user? <a href="">Signup</a></span>
-		</div>
+	<main>
+		<section class="section-a">
+			<div class="left-section">
+				<h2 class="left-title">WELCOME BACK!</h2>
+				<p class="together">To keep connected with us,</p>
+				<p class="together">please sign up first</p>
+				<a href="register.html" class="sign-up">SIGN UP</a>
+			</div>
+		</section>
+	<div class="containertwo ">
+		<p class="head">LOGIN</p>
+		<p class="sub">Sign up to continue or login</p>
+		<form action="" method="post">
+		<input type="email" name="email" placeholder="Email" required="required" /><br/>
+		<input type="password" name="password" placeholder="Password" required="required" /><br/>
+		<input type="submit" value="Login" />
+		<p class="user">Forgot <span><a href="">Username/Password?</a></span></p>
+		<p class="create">New User?<span><a href="">Sign up</a></span></p>
+		</form>
 	</div>
+</main>
 </body>
 </html>
