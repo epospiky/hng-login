@@ -1,0 +1,90 @@
+	body{
+		background: white;
+		
+		width: 100%;
+		font-family: roboto;
+		padding: 0;
+		min-height: 100%
+		
+	}
+	.row{
+		top: 0;
+		bottom: 0;
+	}
+	.left-col{
+		background-color: #007BFF;
+		color: #ffffff;
+		margin-right: 0px;
+		padding: 100px 100px;
+		min-height: 100%!important;
+		width: 100%;
+
+	}
+	.left-col h3, .left-col p, .left-col a{
+		margin-bottom: 30px;
+		text-align: center;
+
+	}
+	.left-col a{
+		padding: 20px 0;
+		width: 60%;
+		
+	}
+	.signup{
+		display: block;
+		padding: 5px;
+		border: 1px solid #ffffff;
+		text-align: center;
+		padding: 0 auto;
+		margin: 0 auto;
+	}
+	a.signup {
+		text-decoration: none;
+		color: #ffffff;
+	}
+	.right-col{
+		background-color: white;
+		min-height: 100%;
+		text-align: center;
+		width: 100%;
+		padding: 50px 100px;
+
+	}
+	#login_form{
+		width: 100%;
+
+	}
+
+	input[type="text"],input[type="password"]{
+		background-color: #c0c0c0;
+		border-radius: 0!important;
+		height: 50px;
+		width: 100%;
+		border: none;
+		box-sizing:border-box;
+	}
+
+	.input-group{
+		position: relative;
+		margin-bottom: 30px;
+	}
+	.input-group input[type="text"],.input-group input[type="password"]{
+		padding-left: 40px;
+	}
+
+	.input-group i{
+		position: absolute;
+		left: 0;
+		top:0;
+		padding: 15px 10px;
+	}
+	.input-group input[type="text"] + i, .input-group input[type="password"] + i{
+		color: #007BFF;
+	}
+	.btn{
+		width: 40%;
+		height: 50px;
+		border-radius: 0;
+	}
+
+	
