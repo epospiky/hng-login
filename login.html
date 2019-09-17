@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Login</title>
+	<title>LOGIN</title>
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<script type="text/javascript" src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -9,45 +9,87 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
+		
+			<!--login in container-->
+
+	<div id="login_page">	
+	<main>	
+		<section class="section-a">
+			<div class="left-section">
+				<h2 class="left-title">WELCOME BACK!</h2>
+				<p class="together">To keep connected with us,<br/>please login with your personal info.<br/><br/> Or</p>
+				
+				<a href="#" class="btn-signup" id="act_signup">SIGN UP</a>
+			</div>
+		</section>
+	<div class="containertwo ">
+		<p class="head">LOGIN</p>
+		<p class="sub">Login to your account</p>
+		<form action="login.php" method="post" >
+		<input type="email" name="email" placeholder="Email" required="required" class="fill"/><br/>
+		<input type="password" name="password" placeholder="Password" required="required" class="fill"/><br/>
+		<input type="submit" class="sign" name="login" value="Login" />
+		<p class="user">Forgot <span><a href="">Username/Password?</a></span></p>
+		<p class="create">New User?<span><a href="">Sign up</a></span></p>
+		</form>
+	</div>
+	</main>
+	</div>
+
+
+
+		<!-- Signup container-->
+	<div id="signup_page">
 	<main>
 		<section class="section-a">
 			<div class="left-section">
 				<h2 class="left-title">Hi there!</h2>
-				<p class="together">To be a member,<br/>please fill in your details</p>
-				<form action="login.php" method="post">
-		<input type="email" name="email" placeholder="Email" required="required" class="input" /><br/>
-		<input type="password" name="password" placeholder="Password" required="required"  class="input" /><br/>
-		<a href="" class="submit">Login</a>
-		<p class="user">Forgot <span><a href="" class="log">Username/Password?</a></span></p>
-		<p class="create">New User?<span><a href="" class="log">Sign up</a></span></p>
-		</form>
+				<p class="together">To be a member,<br/>please fill in your details <br/><br/> Or</p>
+
+					<a class="btn-login" href="#" id="act_login">Login</a>
 				
 			</div>
 		</section>
+
 	<div class="containertwo ">
 
 		<p class="head">SIGNUP</p>
-		<p class="sub">Signup to continue or login</p>
+		<p class="sub">Fill in your details</p>
 		<form>
 			<input type="text" name="Firstname" placeholder="FirstName" required="required" class="fill" /><br/>
 			<input type="text" name="Lastname" placeholder="LastName" required="required" class="fill"/><br/>
 			<input type="email" name="email" placeholder="Email" required="required" class="fill"/><br/>
 			<input type="password" name="password" placeholder="Password" required="required"class="fill" /><br/>
-			<a href="" class="sign">SIGNUP</a>
+			<input type = "submit" value = "SIGNUP" class="sign" name = "sinup">
 			<p class="mem">Already Member?<span><a href="" class="below">Login</a></span></p>
-			
+		</form
 
 
-		<p class="head">LOGIN</p>
-		<p class="sub">Sign up to continue or login</p>
-		<form action="login.php" method="post" >
-		<input type="email" name="email" placeholder="Email" required="required" /><br/>
-		<input type="password" name="password" placeholder="Password" required="required" /><br/>
-		<input type="submit" name="login" value="Login" />
-		<p class="user">Forgot <span><a href="">Username/Password?</a></span></p>
-		<p class="create">New User?<span><a href="">Sign up</a></span></p>
-
-		</form>
+		
+	</div>
 </main>
+</div>
+
+
+	<script  src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#signup_page').hide();
+		$('#act_signup').click(function(){
+			$('#login_page').hide();
+			$('#signup_page').show();
+			$('title').html('SIGNUP');
+		
+
+		});
+		$('#act_login').click(function(){
+			$('#signup_page').hide();
+			$('#login_page').show();
+			$('title').html('LOGIN');
+
+		});
+		});
+	</script>
 </body>
 </html>

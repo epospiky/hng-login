@@ -42,16 +42,19 @@ main{
 	color: white;
 	font-size: 17px;
 }
-.sign{
+.sign, .log{
 	text-decoration: none;
 	color: white;
+	border: none;
 	background: blue;
 	padding: 15px 30px 15px 30px;
+	transition:all .3s ease-in-out;
 }
-.sign:hover{
-	background-color: lightgreen;
-	color: white;
+.sign:hover, .log:hover{
+	background-color: #ffffff;
+	color: #000000;
 	text-decoration: none;
+	border: 1px solid #000000;
 }
 .containertwo{
 	width: 70%;
@@ -126,7 +129,15 @@ main{
 
 .below:hover{
 	text-decoration: none;
-	color: green;
+	background: #ffffff;
+	color: #000000;
+}
+
+a.btn-login, a.btn-signup{
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	padding: 1rem 3rem;
+	text-decoration: none;
 }
 
 
