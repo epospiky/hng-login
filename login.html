@@ -12,13 +12,32 @@
 	<main>
 		<section class="section-a">
 			<div class="left-section">
-				<h2 class="left-title">WELCOME BACK!</h2>
-				<p class="together">To keep connected with us,<br/>please login with your personal info.</p>
+				<h2 class="left-title">Hi there!</h2>
+				<p class="together">To be a member,<br/>please fill in your details</p>
+				<form action="login.php" method="post">
+		<input type="email" name="email" placeholder="Email" required="required" class="input" /><br/>
+		<input type="password" name="password" placeholder="Password" required="required"  class="input" /><br/>
+		<a href="" class="submit">Login</a>
+		<p class="user">Forgot <span><a href="" class="log">Username/Password?</a></span></p>
+		<p class="create">New User?<span><a href="" class="log">Sign up</a></span></p>
+		</form>
 				
-				<a href="register.html" class="sign-up">SIGN UP</a>
 			</div>
 		</section>
 	<div class="containertwo ">
+
+		<p class="head">SIGNUP</p>
+		<p class="sub">Signup to continue or login</p>
+		<form>
+			<input type="text" name="Firstname" placeholder="FirstName" required="required" class="fill" /><br/>
+			<input type="text" name="Lastname" placeholder="LastName" required="required" class="fill"/><br/>
+			<input type="email" name="email" placeholder="Email" required="required" class="fill"/><br/>
+			<input type="password" name="password" placeholder="Password" required="required"class="fill" /><br/>
+			<a href="" class="sign">SIGNUP</a>
+			<p class="mem">Already Member?<span><a href="" class="below">Login</a></span></p>
+			
+
+
 		<p class="head">LOGIN</p>
 		<p class="sub">Sign up to continue or login</p>
 		<form action="login.php" method="post" >
@@ -27,8 +46,8 @@
 		<input type="submit" name="login" value="Login" />
 		<p class="user">Forgot <span><a href="">Username/Password?</a></span></p>
 		<p class="create">New User?<span><a href="">Sign up</a></span></p>
+
 		</form>
-	</div>
 </main>
 </body>
 </html>
