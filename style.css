@@ -123,8 +123,33 @@ main{
 .below{
 	color: blue;
 }
+
 .below:hover{
 	text-decoration: none;
 	color: green;
+}
+
+
+
+
+/*   for login authentication*/
+
+.success-login{
+	display: flex;
+	justify-content:center;
+	flex-direction:column;
+	padding: 4rem;
+	background: linear-gradient(to left, blue, red);
+	text-align: center;
+
+
+}
+.success-login h2{
+	color: #ffffff;
+	padding-bottom: 2rem;
+}
+.success-login p{
+	color: #c0c0c0;
+	padding-bottom: 2rem;
 }
 
