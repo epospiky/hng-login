@@ -26,7 +26,7 @@
 	<div class="containertwo ">
 		<p class="head">LOGIN</p>
 		<p class="sub">Login to your account</p>
-		<form action="login.php" method="post" >
+		<form action="process.php" method="post" >
 		<input type="email" name="email" placeholder="Email" required="required" class="fill"/><br/>
 		<input type="password" name="password" placeholder="Password" required="required" class="fill"/><br/>
 		<input type="submit" class="sign" name="login" value="Login" />
@@ -55,13 +55,14 @@
 	<div class="containertwo ">
 
 		<p class="head">SIGNUP</p>
-		<p class="sub">Fill in your details</p>
-		<form>
-			<input type="text" name="Firstname" placeholder="FirstName" required="required" class="fill" /><br/>
-			<input type="text" name="Lastname" placeholder="LastName" required="required" class="fill"/><br/>
-			<input type="email" name="email" placeholder="Email" required="required" class="fill"/><br/>
+		<!--<p class="sub">Fill in your details</p>-->
+		<form method="post" action="process.php">
+			<input type="text" name="firstname" placeholder="FirstName" required="required" class="fill" /><br/>
+			<input type="text" name="lastname" placeholder="LastName" required="required" class="fill"/><br/>
+			<input type="email" id="email" name="email" placeholder="Email" required="required" class="fill"/><br/>
 			<input type="password" name="password" placeholder="Password" required="required"class="fill" /><br/>
-			<input type = "submit" value = "SIGNUP" class="sign" name = "sinup">
+			<input type="password" name="cpassword" placeholder="Confirm Password" required="required"class="fill" /><br/>
+			<input type = "submit" value = "SIGNUP" id="submit" class="sign" name = "signup">
 			<p class="mem">Already Member?<span><a href="" class="below">Login</a></span></p>
 		</form
 
@@ -89,7 +90,22 @@
 			$('title').html('LOGIN');
 
 		});
+
 		});
+/*
+		var submit_details = document.getElementById('submit');
+		var email = document.getElementById('email');
+		var regEx = /^[a-zA-Z]{3,}[\.]{0,1}[a-zA-Z]{0,}[0-9]{0,}[a-zA-Z]{0,}\@[a-zA-Z]{5,}\.[a-zA-Z]/;	
+	submit_details.addEventListener('click', function (e){
+		//e.preventDefault(e);
+
+
+		 if (!email.value.match(regEx)) {
+			alert('Please enter a valid email address!');
+			return;
+		}
+		else{};
+	})*/
 	</script>
 </body>
 </html>

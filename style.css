@@ -24,6 +24,7 @@ main{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	height: 100vh;
 }
 .left-section{
 	display: flex;
@@ -61,6 +62,15 @@ main{
 	height: 700px;	
 	float: right;
 	padding-top: 50px;
+	text-align: center;
+    padding-left: 100px;
+
+}
+#signup_page .containertwo{
+	width: 70%;
+	height: 700px;	
+	float: right;
+	padding-top: 10px;
 	text-align: center;
     padding-left: 100px;
 
@@ -152,6 +162,8 @@ a.btn-login, a.btn-signup{
 	padding: 4rem;
 	background: linear-gradient(to left, blue, red);
 	text-align: center;
+	height: 100vh;
+
 
 
 }
