@@ -9,6 +9,7 @@
 }
 body {
   font-family: roboto;
+  overflow: hidden;
  
 }
 main{
@@ -18,7 +19,7 @@ main{
 	height: 100vh;
 }
 .section-a{
-	background-color: blue;
+	background-color: #163647;
 	grid-area: section-a;
 	display: flex;
 	flex-direction: column;
@@ -42,20 +43,6 @@ main{
 .together{
 	color: white;
 	font-size: 17px;
-}
-.sign, .log{
-	text-decoration: none;
-	color: white;
-	border: none;
-	background: blue;
-	padding: 15px 30px 15px 30px;
-	transition:all .3s ease-in-out;
-}
-.sign:hover, .log:hover{
-	background-color: #ffffff;
-	color: #000000;
-	text-decoration: none;
-	border: 1px solid #000000;
 }
 .containertwo{
 	width: 70%;
@@ -91,7 +78,7 @@ main{
 }
 .head{
 	font-size: 24px;
-	color: blue;
+	color: #5588a3;
 }
 .submit{
 	text-decoration: none;
@@ -120,15 +107,36 @@ main{
 	color: white;
 	text-decoration: none;
 }
-.fill{
-	width: 317px;
-	height: 67px;
+input{
+	display: inline-block;
+	width: 320px;
+	height: 55px;
 	padding: 15px;
-	margin-top: 6px;
-	margin-bottom: 25px;
-	background-color: #c4c4c4;
-	border: none;
+	margin: 6px 0 15px 0;
+	border: 1px solid #F2EBF7;
+    background: #ffffff;
 	color: black;
+	border-radius: 5px;
+
+}
+button{
+	width: 320px;
+	height: 55px;
+	text-decoration: none;
+	color: white;
+	border: none;
+	background: #145374;
+	margin: 10px;
+	font-weight: 800px;
+	transition:all .3s ease-in-out;
+	font-size: 1.3rem;
+	border-radius: 5px;
+}
+button:hover{
+	background-color: #ffffff;
+	color: #145374;
+	text-decoration: none;
+	border: 1px solid #145374;
 }
 .mem{
 	padding-top: 20px;
@@ -136,7 +144,6 @@ main{
 .below{
 	color: blue;
 }
-
 .below:hover{
 	text-decoration: none;
 	background: #ffffff;
@@ -145,12 +152,18 @@ main{
 
 a.btn-login, a.btn-signup{
 	color: #ffffff;
-	border: 1px solid #ffffff;
-	padding: 1rem 3rem;
-	text-decoration: none;
+    margin: 15px;
+    border: 1px solid #ffffff;
+    padding: .7rem 3rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border-radius: 5px;
 }
 
-
+.has-shadow {
+    box-shadow: -1px 3px 7px 0px rgba(0, 0, 0, 0.19);
+}
 
 
 /*   for login authentication*/

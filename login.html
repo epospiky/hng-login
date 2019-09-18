@@ -9,89 +9,76 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-		
-			<!--login in container-->
-
+		<!--login in container-->
 	<div id="login_page">	
-	<main>	
-		<section class="section-a">
-			<div class="left-section">
-				<h2 class="left-title">WELCOME BACK!</h2>
-				<p class="together">To keep connected with us,<br/>please login with your personal info.<br/><br/> Or</p>
-				
-				<a href="#" class="btn-signup" id="act_signup">SIGN UP</a>
+		<main>	
+			<section class="section-a">
+				<div class="left-section">
+					<h2 class="left-title">WELCOME BACK!</h2>
+					<p class="together">To keep connected with us,<br/>please login with your personal info.<br/><br/> <span style="font-size: 1.3rem; color: #c7c2c2;">OR</span></p>
+					
+					<a href="#" class="btn-signup" id="act_signup">SIGN UP</a>
+				</div>
+			</section>
+			<div class="containertwo ">
+				<p class="head">LOGIN</p>
+				<p class="sub">Login to your account</p>
+				<form action="process.php" method="post" >
+					<input type="email" name="email" placeholder="Email" required="required" class="has-shadow"/><br/>
+					<input type="password" name="password" placeholder="Password" required="required" class="has-shadow"/><br/>
+					<button class="has-shadow" name="login" value="Login">Login</button>
+					<p class="user">Forgot <span><a href="">Username/Password?</a></span></p>
+					<p class="create">New User?<span><a href="">Sign up</a></span></p>
+				</form>
 			</div>
-		</section>
-	<div class="containertwo ">
-		<p class="head">LOGIN</p>
-		<p class="sub">Login to your account</p>
-		<form action="process.php" method="post" >
-		<input type="email" name="email" placeholder="Email" required="required" class="fill"/><br/>
-		<input type="password" name="password" placeholder="Password" required="required" class="fill"/><br/>
-		<input type="submit" class="sign" name="login" value="Login" />
-		<p class="user">Forgot <span><a href="">Username/Password?</a></span></p>
-		<p class="create">New User?<span><a href="">Sign up</a></span></p>
-		</form>
+		</main>
 	</div>
-	</main>
-	</div>
-
-
-
-		<!-- Signup container-->
-	<div id="signup_page">
-	<main>
-		<section class="section-a">
-			<div class="left-section">
-				<h2 class="left-title">Hi there!</h2>
-				<p class="together">To be a member,<br/>please fill in your details <br/><br/> Or</p>
-
-					<a class="btn-login" href="#" id="act_login">Login</a>
-				
-			</div>
-		</section>
-
-	<div class="containertwo ">
-
-		<p class="head">SIGNUP</p>
-		<!--<p class="sub">Fill in your details</p>-->
-		<form method="post" action="process.php">
-			<input type="text" name="firstname" placeholder="FirstName" required="required" class="fill" /><br/>
-			<input type="text" name="lastname" placeholder="LastName" required="required" class="fill"/><br/>
-			<input type="email" id="email" name="email" placeholder="Email" required="required" class="fill"/><br/>
-			<input type="password" name="password" placeholder="Password" required="required"class="fill" /><br/>
-			<input type="password" name="cpassword" placeholder="Confirm Password" required="required"class="fill" /><br/>
-			<input type = "submit" value = "SIGNUP" id="submit" class="sign" name = "signup">
-			<p class="mem">Already Member?<span><a href="" class="below">Login</a></span></p>
-		</form
-
-
 		
+	<!-- Signup container-->
+	<div id="signup_page">
+		<main>
+			<section class="section-a">
+				<div class="left-section">
+					<h2 class="left-title">Hi there!</h2>
+					<p class="together">To be a member,<br/>please fill in your details <br/><br/><span style="font-size: 1.3rem; color: #c4c4c4;">OR</span></p>
+						<a class="btn-login" href="#" id="act_login">Login</a>
+				</div>
+			</section>
+
+			<div class="containertwo >
+				<p class="head">SIGNUP</p>
+				<p class="sub">Fill in your details</p>
+				<form method="post" action="process.php">
+					<input type="text" name="firstname" placeholder="FirstName" required="required" />
+					<input type="text" name="lastname" placeholder="LastName" required="required" />
+					<input type="email" id="email" name="email" placeholder="Email" required="required" />
+					<input type="password" name="password" placeholder="Password" required="required"/>
+					<input type="password" name="cpassword" placeholder="Confirm Password" required="required"/>
+					<button class="has-shadow" name="signup" id="submit" value="Signup">Signup</button>
+					<p class="mem">Already Member?<span><a href="" class="below">Login</a></span></p>
+				</form>
+			</div>
+		</main>
 	</div>
-</main>
-</div>
 
 
 	<script  src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script type="text/javascript">
+ 	<script type="text/javascript">
 	$(document).ready(function(){
 		$('#signup_page').hide();
 		$('#act_signup').click(function(){
 			$('#login_page').hide();
 			$('#signup_page').show();
 			$('title').html('SIGNUP');
-		
-
 		});
+
 		$('#act_login').click(function(){
 			$('#signup_page').hide();
 			$('#login_page').show();
 			$('title').html('LOGIN');
-
 		});
 
-		});
+	});
 /*
 		var submit_details = document.getElementById('submit');
 		var email = document.getElementById('email');
