@@ -80,4 +80,27 @@
 				}
 						
 	}
+
+
+	if (isset($_POST['recover'])) {
+		$email = $_POST['email'];
+		if (!empty($email)) {
+			$stmt = $conn->prepare("SELECT * FROM user WHERE Email = ?");
+						$stmt->bindParam(1, $email, PDO::PARAM_STR);
+						$stmt->execute();
+						$row = $stmt->fetch();
+						if ($row > 0) {
+							echo "<script>alert('Email gotten!')</script>";
+						} else {
+							echo ";<script>alert('OOPPS! Email not gotten!')</script>";
+						}
+						
+		} else {
+			echo "<script>alert('OOPPS! A problem has occcurred! Please try again!')</script>";
+			exit();
+		}
+		
+		
+						
+	}
 ?>

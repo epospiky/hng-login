@@ -32,7 +32,7 @@
 					<input type="email" name="email" placeholder="Email" required="required" class="has-shadow"/><br/>
 					<input type="password" name="password" placeholder="Password" required="required" class="has-shadow"/><br/>
 					<button class="has-shadow" name="login" value="Login">Login</button>
-					<p class="user">Forgot <span><a href="">Password?</a></span></p>
+					<!--<p class="user">Forgot <span><a href="#" class="act_forgotpass">Password?</a></span></p>-->
 					<p class="create">New User?<span><a href="#" class ="act_signup"> Sign up</a></span></p>
 				</form>
 			</div>
@@ -69,22 +69,56 @@
 	</div>
 
 
+
+<!-- forgot password
+	<div id="forgot_password_page">
+		<main>
+			<section class="section-a">
+				<div class="left-section">
+					<h2 class="left-title">HI THERE!</h2>
+
+					<p class="together">Enter your email,<br/>and get a password activation link<br/><br/><span style="font-size: 1.3rem; color: #c4c4c4;">OR</span></p>
+					<a href="#" class="btn-login act_login">LOGIN</a>
+				</div>
+			</section>
+
+			<div class="containertwo2">
+				<p class="head page2">RECOVER YOUR PASSWORD</p>
+				<p class="head page2">HI THERE!</p>
+				<p class="sub">Enter your email to recover your password!</p>
+				<form method="post" action="process.php">
+					<input type="email" name="email" placeholder="FirstName" required="required" class="has-shadow"/>
+					<button class="has-shadow" name="recover" id="submit" value="Submit">Submit</button>
+					<p class="mem">Already Member?<span><a href="#" class="below act_login"> Login</a></span></p>
+				</form>
+			</div>
+		</main>
+	</div>-->
+
+
+
+
 	<script type="text/javascript" src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script  src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
  	<script type="text/javascript">
 	$(document).ready(function(){
-		$('#signup_page').hide();
+		$('#signup_page, #forgot_password_page').hide();
 		$('.act_signup').click(function(){
-			$('#login_page').hide();
+			$('#login_page, #forgot_password_page').hide();
 			$('#signup_page').show();
 			$('title').html('SIGNUP');
 		});
 
 		$('.act_login').click(function(){
-			$('#signup_page').hide();
+			$('#signup_page, #forgot_password_page').hide();
 			$('#login_page').show();
 			$('title').html('LOGIN');
 		});
+/*			$('.act_forgotpass').click(function(){
+			$('#signup_page, #login_page').hide();
+			$('#forgot_password_page').show();
+			$('title').html('LOGIN');
+		});*/
 
 	});
 
