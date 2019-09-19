@@ -41,7 +41,11 @@
   .together{
 	  color: white;
 	  font-size: 17px;
-	  padding: 20px 0;
+	  padding: 10px 0;
+  }
+  .spanOr
+  {
+	  padding: 11px 0;
   }
   .containertwo{
 	  width: 70%;
@@ -64,7 +68,9 @@
 	  color: #c4c4c4;
   }
   .head{
-	  font-size: 24px;
+	  font-family: arial black;
+	  letter-spacing: 1.5px;
+	  font-size: 26px;
 	  color: #5588a3;
   }
   .head.page2 
@@ -123,28 +129,25 @@
   .mem{
 	  padding-top: 20px;
   }
-  .below{
-	  color: blue;
-  }
   .below:hover{
 	  text-decoration: none;
-	  background: #ffffff;
 	  color: #000000;
   }
-  
-  a.btn-login, a.btn-signup{
+  a.btn-login, a.btn-signup {
 	  color: #ffffff;
 	  margin: 15px;
-	  border: 1px solid #ffffff;
+	  border: 1px solid rgba(144, 143, 143, 0.36);
 	  padding: .7rem 3rem;
 	  text-decoration: none;
 	  font-weight: 700;
 	  font-size: 1.3rem;
 	  border-radius: 5px;
   }
-  
   .has-shadow {
 	  box-shadow: -1px 3px 7px 0px rgba(0, 0, 0, 0.19);
+  }
+  .has-shadow2 {
+	  box-shadow: -1px 3px 7px 0px rgba(0, 0, 0, 0.38);
   }
   
   /*---Media Queries --*/
@@ -157,43 +160,52 @@
   
 	  }
   }
+  @media (max-width: 768px) 
+  {
+	  .section-a
+	  {
+		  display: none;
+	  }
+	  main 
+	  {
+		  background: #fff;
+		  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+		  animation: mymove 5s infinite;
+	  }
+	  /* Chrome, Safari, Opera */
+	  @-webkit-keyframes mymove 
+	  {
+		  25% {background-color: #fff;}
+		  70% {background-color: #14537417;}
+	  }
+	  /* Standard syntax */
+	  @keyframes mymove 
+	  {
+		  25% {background-color: #fff;}
+		  70% {background-color: #14537417;}
+	  }
+	  .containertwo2, .containertwo
+	  {
+		  width: 200%;
+		  padding-left: 100px;
+	  }
+  }
   @media (max-width: 576px) 
   {
 	  input, button
 	  {
 		  width: 250px;
 	  }
-	  .together
-	  {
-		  padding: 20px 15px;
-	  }
-	  a.btn-login, a.btn-signup 
-	  {
-		  padding: .3rem 1rem;
-	  }
-	  .head.page2 
-	  {
-		  padding-top: 3rem;
-	  }
   }
   @media (max-width: 450px) 
   {
 	  input, button
 	  {
-		  width: 150px;
+		  width: 220px;
 	  }
-	  .together
+	  .containertwo2, .containertwo
 	  {
-		  font-size: 14px;
-	  }
-	  a.btn-login, a.btn-signup 
-	  {
-		  padding: .05rem .4rem;
-		  font-size: 15px;
-	  }
-	  .left-title
-	  {
-		  font-size: 1.3rem;
+		  padding-left: 80px;
 	  }
 	  .user
 	  {
