@@ -17,6 +17,7 @@
 					<h2>Congratulations! You have been successfully authenticated</h2>
 					<p>Your Name is <?php echo " ".$row['Firstname']." ". $row['Lastname'];?></p>
 					<p>Your Email address is <?php echo " ".$row['Email'];?></p>
+					<p><a href="index.html" class="suc-login has-shadow" >Logout</a></p>
 				</div>
 
 			<?php } else {
@@ -63,6 +64,7 @@
 								<div class="success-login">
 								<h2>Congratulations! You have been successfully registered</h2>
 								<p>You can go ahead and login now</p>
+								<p><a href="index.html" class="suc-login has-shadow" >Login</a></p>
 								
 								</div>
 						<?php } else {

@@ -31,7 +31,7 @@
 				<form action="process.php" method="post" >
 					<input type="email" name="email" placeholder="Email" required="required" class="has-shadow"/><br/>
 					<input type="password" name="password" placeholder="Password" required="required" class="has-shadow"/><br/>
-					<button class="has-shadow" name="login" value="Login">Login</button>
+					<button class="has-shadow" name="login" value="Login">Login</button><br/><br/>
 					<!--<p class="user">Forgot <span><a href="#" class="act_forgotpass">Password?</a></span></p>-->
 					<p class="create">New User?<span><a href="#" class ="act_signup"> Sign up</a></span></p>
 				</form>
@@ -134,11 +134,15 @@
 		 	e.preventDefault(e);
 			alert('Please enter a valid email address!');
 			return;
+		}else if (passwrd.value.length < 6  && cpasswrd.value.length < 6) {
+			e.preventDefault();
+			alert('Passwords too short!');
+			return;
 		}
 		else if(passwrd.value !== cpasswrd.value){
 			e.preventDefault(e);
 			alert('Passwords do not match!');
-			return
+			return;
 		}
 	})
 	</script>

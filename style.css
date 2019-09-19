@@ -265,5 +265,23 @@
 	  color: #c0c0c0;
 	  padding-bottom: 2rem;
   }
-  
+  .suc-login{
+  	 width: 320px;
+	  height: 55px;
+	  text-decoration: none;
+	  color: white;
+	  padding: 1rem 2rem;
+	  border: none;
+	  background: #145374;
+	  font-weight: 800px;
+	  transition:all .3s ease-in-out;
+	  font-size: 1.3rem;
+	  border-radius: 5px;
+  }
+  .suc-login:hover{
+  		background-color: #ffffff;
+	  color: #145374;
+	  text-decoration: none;
+	  border: 1px solid #145374;
+  }
   
