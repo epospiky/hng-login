@@ -15,13 +15,13 @@
 				<link rel="stylesheet" type="text/css" href="style.css">
 				<div class="success-login">
 					<h2>Congratulations! You have been successfully authenticated</h2>
-					<p>You username is <?php echo " ".$row['Username'];?></p>
+					<p>Your Name is <?php echo " ".$row['Firstname']." ". $row['Lastname'];?></p>
 					<p>Your Email address is <?php echo " ".$row['Email'];?></p>
 				</div>
 
 			<?php } else {
 				echo "<script>alert('Invalid Email and password!')</script>";
-				echo "<script>window.location.href='login.html'</script>";
+				echo "<script>window.location.href='index.html'</script>";
 
 			}
 			
@@ -48,7 +48,8 @@
 						$stmt->execute();
 						$row = $stmt->fetch();
 						if ( $row > 0) {
-							echo "<script>alert('Username already exists. Please login!')</script>";
+							echo "<script>alert('Username already exists. Please login!')
+							 window.location.href='index.html'</script>";
 						} else {
 						$password = md5($password);
 						$stmt = $conn->prepare("INSERT INTO user (Firstname, Lastname, Email, Password) VALUES (?,?,?,?)");
