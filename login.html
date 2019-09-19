@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
 	<title>LOGIN</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="HTML, CSS, PHP, SQL, JQUERY, HNG, HNGi6" >
+	<meta name="description" content="Free Login Page">
+	<meta name="author" content="Stallions">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<script type="text/javascript" src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -20,7 +24,7 @@
 					<a href="#" class="btn-signup" id="act_signup">SIGN UP</a>
 				</div>
 			</section>
-			<div class="containertwo ">
+			<div class="containertwo">
 				<p class="head">LOGIN</p>
 				<p class="sub">Login to your account</p>
 				<form action="process.php" method="post" >
@@ -28,7 +32,7 @@
 					<input type="password" name="password" placeholder="Password" required="required" class="has-shadow"/><br/>
 					<button class="has-shadow" name="login" value="Login">Login</button>
 					<p class="user">Forgot <span><a href="">Username/Password?</a></span></p>
-					<p class="create">New User?<span><a href="">Sign up</a></span></p>
+					<p class="create">New User?<span><a href="#" id="act_signup"> Sign up</a></span></p>
 				</form>
 			</div>
 		</main>
@@ -41,12 +45,12 @@
 				<div class="left-section">
 					<h2 class="left-title">Hi there!</h2>
 					<p class="together">To be a member,<br/>please fill in your details <br/><br/><span style="font-size: 1.3rem; color: #c4c4c4;">OR</span></p>
-						<a class="btn-login" href="#" id="act_login">Login</a>
+					<a class="btn-login" href="#" id="act_login">Login</a>
 				</div>
 			</section>
 
-			<div class="containertwo >
-				<p class="head">SIGNUP</p>
+			<div class="containertwo2">
+				<p class="head page2">SIGN UP</p>
 				<p class="sub">Fill in your details</p>
 				<form method="post" action="process.php">
 					<input type="text" name="firstname" placeholder="FirstName" required="required" />
@@ -55,13 +59,14 @@
 					<input type="password" name="password" placeholder="Password" required="required"/>
 					<input type="password" name="cpassword" placeholder="Confirm Password" required="required"/>
 					<button class="has-shadow" name="signup" id="submit" value="Signup">Signup</button>
-					<p class="mem">Already Member?<span><a href="" class="below">Login</a></span></p>
+					<p class="mem">Already Member?<span><a href="" class="below"> Login</a></span></p>
 				</form>
 			</div>
 		</main>
 	</div>
 
 
+	<script type="text/javascript" src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script  src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
  	<script type="text/javascript">
 	$(document).ready(function(){
