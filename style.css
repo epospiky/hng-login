@@ -187,7 +187,11 @@
 	  	display: none;
 	  }
 	  input, button{
-	  	width: 90%;
+	  	width: 80%!important;
+
+	  }
+	  form{
+	  	width: 100%;
 	  }
   }
   @media (max-width: 576px) 
