@@ -11,3 +11,6 @@ Remember to move the pages to the www (aka htdocs) folder.
 Fork the repository, make your changes locally.
 
 Commit your changes and push the changes. After implementing all your changes, create a PR and the owner of the repository (or anyone else he has given the privilege) will merge your changes if it has no conflicts.
+
+This work is hosted at: 
+https://team-stallions.000webhostapp.com/
