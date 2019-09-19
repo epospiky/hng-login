@@ -21,18 +21,19 @@
 					<h2 class="left-title">WELCOME BACK!</h2>
 					<p class="together">To keep connected with us,<br/>please login with your personal info.<br/><br/> <span style="font-size: 1.3rem; color: #c7c2c2;">OR</span></p>
 					
-					<a href="#" class="btn-signup" id="act_signup">SIGN UP</a>
+					<a href="#" class="btn-signup act_signup">SIGN UP</a>
 				</div>
 			</section>
 			<div class="containertwo">
 				<p class="head">LOGIN</p>
+				<p class="head page2">WELCOME BACK!</p>
 				<p class="sub">Login to your account</p>
 				<form action="process.php" method="post" >
 					<input type="email" name="email" placeholder="Email" required="required" class="has-shadow"/><br/>
 					<input type="password" name="password" placeholder="Password" required="required" class="has-shadow"/><br/>
 					<button class="has-shadow" name="login" value="Login">Login</button>
-					<p class="user">Forgot <span><a href="">Username/Password?</a></span></p>
-					<p class="create">New User?<span><a href="#" id="act_signup"> Sign up</a></span></p>
+					<p class="user">Forgot <span><a href="">Password?</a></span></p>
+					<p class="create">New User?<span><a href="#" class ="act_signup"> Sign up</a></span></p>
 				</form>
 			</div>
 		</main>
@@ -43,23 +44,25 @@
 		<main>
 			<section class="section-a">
 				<div class="left-section">
-					<h2 class="left-title">Hi there!</h2>
+					<h2 class="left-title">HI THERE!</h2>
+
 					<p class="together">To be a member,<br/>please fill in your details <br/><br/><span style="font-size: 1.3rem; color: #c4c4c4;">OR</span></p>
-					<a class="btn-login" href="#" id="act_login">Login</a>
+					<a href="#" class="btn-login act_login">LOGIN</a>
 				</div>
 			</section>
 
 			<div class="containertwo2">
 				<p class="head page2">SIGN UP</p>
-				<p class="sub">Fill in your details</p>
+				<p class="head page2">HI THERE!</p>
+				<p class="sub">Fill in your details to create an account</p>
 				<form method="post" action="process.php">
-					<input type="text" name="firstname" placeholder="FirstName" required="required" />
-					<input type="text" name="lastname" placeholder="LastName" required="required" />
-					<input type="email" id="email" name="email" placeholder="Email" required="required" />
-					<input type="password" name="password" placeholder="Password" required="required"/>
-					<input type="password" name="cpassword" placeholder="Confirm Password" required="required"/>
+					<input type="text" name="firstname" placeholder="FirstName" required="required" class="has-shadow"/>
+					<input type="text" name="lastname" placeholder="LastName" required="required" class="has-shadow"/>
+					<input type="email" id="email" name="email" placeholder="Email" required="required" class="has-shadow"/>
+					<input type="password" name="password" placeholder="Password" required="required" class="has-shadow"/>
+					<input type="password" name="cpassword" placeholder="Confirm Password" required="required" class="has-shadow"/>
 					<button class="has-shadow" name="signup" id="submit" value="Signup">Signup</button>
-					<p class="mem">Already Member?<span><a href="" class="below"> Login</a></span></p>
+					<p class="mem">Already Member?<span><a href="#" class="below act_login"> Login</a></span></p>
 				</form>
 			</div>
 		</main>
@@ -71,33 +74,34 @@
  	<script type="text/javascript">
 	$(document).ready(function(){
 		$('#signup_page').hide();
-		$('#act_signup').click(function(){
+		$('.act_signup').click(function(){
 			$('#login_page').hide();
 			$('#signup_page').show();
 			$('title').html('SIGNUP');
 		});
 
-		$('#act_login').click(function(){
+		$('.act_login').click(function(){
 			$('#signup_page').hide();
 			$('#login_page').show();
 			$('title').html('LOGIN');
 		});
 
 	});
-/*
+
 		var submit_details = document.getElementById('submit');
 		var email = document.getElementById('email');
 		var regEx = /^[a-zA-Z]{3,}[\.]{0,1}[a-zA-Z]{0,}[0-9]{0,}[a-zA-Z]{0,}\@[a-zA-Z]{5,}\.[a-zA-Z]/;	
 	submit_details.addEventListener('click', function (e){
-		//e.preventDefault(e);
+		
 
 
-		 if (!email.value.match(regEx)) {
+		if (!email.value.match(regEx)) {
+		 	e.preventDefault(e);
 			alert('Please enter a valid email address!');
 			return;
 		}
 		else{};
-	})*/
+	})
 	</script>
 </body>
 </html>

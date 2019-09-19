@@ -54,11 +54,15 @@
   .containertwo2{
 	  width: 70%;
 	  height: 100vh;	
-	  padding-top: 10px;
+	  padding-top:10vh;
 	  text-align: center;
 	  padding-left: 100px;
   
   }
+    .containertwo p:nth-child(2), .containertwo2 p:nth-child(2){
+	  	display: none;
+	  }
+
   .sub{
 	  margin: 19px;
 	  color: #c4c4c4;
@@ -67,7 +71,7 @@
 	  font-size: 24px;
 	  color: #5588a3;
   }
-  .head.page2 
+  .head .page2 
 	  {
 		  padding-top: 7rem;
 	  }
@@ -148,13 +152,42 @@
   }
   
   /*---Media Queries --*/
-  @media (max-width: 992px) 
+  @media only screen and (max-width: 992px) 
   {
 	  .containertwo, .containertwo2
 	  {
 		  width: 100%;
 		  padding-left: 0;
   
+	  }
+  }
+    @media only screen and (max-width: 768px) 
+  {
+  	main{
+  		display: block;
+  	}
+	  .containertwo, .containertwo2
+	  {
+		  width: 100%;
+		 
+		  padding: 0;
+		  margin: 0;
+		  display: flex;
+		  flex-direction:column;
+		  justify-content:center;
+  
+	  }
+	  .containertwo p:first-child, .containertwo2 p:first-child{
+	  	display: none;
+	  }
+	  .containertwo p:nth-child(2), .containertwo2 p:nth-child(2){
+	  	display: block;
+	  }
+	  .section-a{
+	  	display: none;
+	  }
+	  input, button{
+	  	width: 65%;
 	  }
   }
   @media (max-width: 576px) 
