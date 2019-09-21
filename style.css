@@ -45,7 +45,7 @@
   }
   .spanOr
   {
-	  padding: 11px 0;
+      padding: 11px 0;
   }
   .containertwo{
 	  width: 70%;
@@ -53,15 +53,13 @@
 	  padding-top: 20vh;
 	  text-align: center;
 	  padding-left: 100px;
-  
   }
   .containertwo2{
 	  width: 70%;
 	  height: 100vh;	
-	  padding-top: 10px;
+	  padding-top: 1vh;
 	  text-align: center;
 	  padding-left: 100px;
-  
   }
   .sub{
 	  margin: 19px;
@@ -75,7 +73,7 @@
   }
   .head.page2 
 	  {
-		  padding-top: 7rem;
+		  padding-top: 3.5rem;
 	  }
   .submit{
 	  text-decoration: none;
@@ -133,7 +131,7 @@
 	  text-decoration: none;
 	  color: #000000;
   }
-  a.btn-login, a.btn-signup {
+  a.btn-login, a.btn-signup{
 	  color: #ffffff;
 	  margin: 15px;
 	  border: 1px solid rgba(144, 143, 143, 0.36);
@@ -143,51 +141,92 @@
 	  font-size: 1.3rem;
 	  border-radius: 5px;
   }
+a.btn-login:hover, a.btn-signup:hover, button:hover{
+	  background-color: #ffffff;
+	  color: #145374;
+	  text-decoration: none;
+	  border: 1px solid #145374;
+  }
   .has-shadow {
 	  box-shadow: -1px 3px 7px 0px rgba(0, 0, 0, 0.19);
   }
   .has-shadow2 {
-	  box-shadow: -1px 3px 7px 0px rgba(0, 0, 0, 0.38);
+    box-shadow: -1px 3px 7px 0px rgba(0, 0, 0, 0.38);
   }
-  
   /*---Media Queries --*/
-  @media (max-width: 992px) 
+  @media only screen and (max-width: 992px) 
   {
 	  .containertwo, .containertwo2
 	  {
 		  width: 100%;
 		  padding-left: 0;
-  
+	  }
+	  .head.page2 
+	  {
+	    padding-top: 8.2rem;
 	  }
   }
-  @media (max-width: 768px) 
+    @media only screen and (max-width: 768px) 
   {
-	  .section-a
+  	main{
+  		display: block;
+  	}
+  	main 
+	{
+	    background: #fff;
+	    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+	    animation: mymove 5s infinite;
+	}
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes mymove 
+	{
+	    25% {background-color: #fff;}
+	    70% {background-color: #14537417;}
+	}
+	/* Standard syntax */
+	@keyframes mymove 
+	{
+	    25% {background-color: #fff;}
+	    70% {background-color: #14537417;}
+	}
+	.containertwo2, .containertwo
+	{
+		width: 200%;
+    	padding-left: 100px;
+	}
+	  .containertwo, .containertwo2
 	  {
-		  display: none;
+		  width: 100%;
+		  padding: 0;
+		  margin: 0;
+		  display: flex;
+		  flex-direction:column;
+		  justify-content:center;
+  
 	  }
-	  main 
-	  {
-		  background: #fff;
-		  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-		  animation: mymove 5s infinite;
+	  .containertwo p:nth-child(2), .containertwo2 p:nth-child(2){
+	  	display: block;
 	  }
-	  /* Chrome, Safari, Opera */
-	  @-webkit-keyframes mymove 
+	  .sub
 	  {
-		  25% {background-color: #fff;}
-		  70% {background-color: #14537417;}
+	  	margin: 0rem 0 2rem;
 	  }
-	  /* Standard syntax */
-	  @keyframes mymove 
-	  {
-		  25% {background-color: #fff;}
-		  70% {background-color: #14537417;}
+	  .section-a{
+	  	display: none;
 	  }
-	  .containertwo2, .containertwo
+  	  .head 
 	  {
-		  width: 200%;
-		  padding-left: 100px;
+		margin-top: -8rem;
+	  }
+	  .head.page2 
+	  {
+	    padding-top: 0rem;
+	  }
+	  input, button{
+	  	width: 70% !important;
+	  }
+	  form{
+	  	width: 100%;
 	  }
   }
   @media (max-width: 576px) 
@@ -196,16 +235,28 @@
 	  {
 		  width: 250px;
 	  }
+  	  .head 
+	  {
+		margin-top: -7rem;
+	  }
+	  .sub
+	  {
+	  	margin: 0rem 0 2rem;
+	  }
   }
   @media (max-width: 450px) 
   {
 	  input, button
 	  {
-		  width: 220px;
+		  width: 150px;
 	  }
-	  .containertwo2, .containertwo
+	  .sub
 	  {
-		  padding-left: 80px;
+	  	margin: .01rem 0 .7rem;
+	  }
+  	  .head, .page2 
+	  {
+		margin-top: -1rem;
 	  }
 	  .user
 	  {
@@ -240,5 +291,23 @@
 	  color: #c0c0c0;
 	  padding-bottom: 2rem;
   }
-  
+  .suc-login{
+  	 width: 320px;
+	  height: 55px;
+	  text-decoration: none;
+	  color: white;
+	  padding: 1rem 2rem;
+	  border: none;
+	  background: #145374;
+	  font-weight: 800px;
+	  transition:all .3s ease-in-out;
+	  font-size: 1.3rem;
+	  border-radius: 5px;
+  }
+  .suc-login:hover{
+  		background-color: #ffffff;
+	  color: #145374;
+	  text-decoration: none;
+	  border: 1px solid #145374;
+  }
   
