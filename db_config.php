@@ -10,9 +10,9 @@ try{
 	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 /*
 	if ($conn == true) {
-		echo "<script>alert('The fucking database is connected man!')</script>";
+		echo "<script>alert('Database connected')</script>";
 	} else {
-		echo "<script>alert('The fucking database is crazilly giving us hard time!')</script>";
+		echo "<script>alert('Unable to connect to database')</script>";
 	};*/
 	
 }

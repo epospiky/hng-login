@@ -1,35 +1,147 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Log-in</title>
-    <link rel="stylesheet" href="style.css">
+	<title>LOGIN</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="HTML, CSS, PHP, SQL, JQUERY, HNG, HNGi6" >
+	<meta name="description" content="Free Login Page">
+	<meta name="author" content="Stallions">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <main>
-        <section class="section-a">
-            <div class="left-section">
-                <h2 class="left-title">WELCOME BACK!</h2>
-                <p class="lead lead-pro">To keep connected with us,</p>
-                <p class="lead"> please sign up first</p>
+		<!--login in container-->
+	<div id="login_page">	
+		<main>	
+			<section class="section-a">
+				<div class="left-section">
+					<h2 class="left-title">WELCOME BACK!</h2>
+					<p class="together">To keep connected with us,<br/>please login with your personal info.<br/><br/> <div class="spanOr" style="font-size: 1.3rem; color: #c7c2c2;">OR</div></p>
+					
+					<a href="#" class="btn-signup act_signup has-shadow2">SIGN UP</a>
+				</div>
+			</section>
+			<div class="containertwo">
+				<p class="head">LOGIN</p>
+				<p class="sub">Login to your account</p>
+				<form action="process.php" method="post" >
+					<input type="email" name="email" placeholder="Email" required="required" class="has-shadow"/><br/>
+					<input type="password" name="password" placeholder="Password" required="required" class="has-shadow"/><br/>
+					<button class="has-shadow" name="login" value="Login">Login</button><br/><br/>
+					<!--<p class="user">Forgot <span><a href="#" class="act_forgotpass">Password?</a></span></p>-->
+					<p class="create">New User?<span><a href="#" class ="act_signup"> Sign up</a></span></p>
+				</form>
+			</div>
+		</main>
+	</div>
+		
+	<!-- Signup container-->
+	<div id="signup_page">
+		<main>
+			<section class="section-a">
+				<div class="left-section">
+					<h2 class="left-title">HI THERE!</h2>
+					<p class="together">To be a member,<br/>please fill in your details <br/><br/><div class="spanOr" style="font-size: 1.3rem; color: #c4c4c4;">OR</div class="spanOr"></p>
+					<a href="#" class="btn-login act_login has-shadow2">LOGIN</a>
+				</div>
+			</section>
 
-                <a href="register.html" class="sign-up">SIGN UP</a>
-            </div>
-        </section>
-        <section class="section-b">
-            <div>
-                <!-- <h2>LOG IN</h2>
-                <p>Sign up </p>
-               <form action="#">
-                    <input type="email" placeholder="Email" aria-placeholder="Email">
-                    <input type="password" placeholder="Password" aria-placeholder="Password">
-                    <a href="#">Forgot Password?</a>
-               </form>
-               <a href="#">Log in</a> -->
-            </div>
-        </section>
-    </main>
+			<div class="containertwo2">
+				<p class="head page2">SIGN UP</p>
+				<p class="sub">Fill in your details to create an account</p>
+				<form method="post" action="process.php">
+					<input type="text" name="firstname" placeholder="FirstName" required="required" class="has-shadow"/>
+					<input type="text" name="lastname" placeholder="LastName" required="required" class="has-shadow"/>
+					<input type="email" id="email" name="email" placeholder="Email" required="required" class="has-shadow"/>
+					<input type="password" id = "passwrd" name="password" placeholder="Password" required="required" class="has-shadow"/>
+					<input type="password" id="cpasswrd"name="cpassword" placeholder="Confirm Password" required="required" class="has-shadow"/>
+					<button class="has-shadow" name="signup" id="submit" value="Signup">Signup</button>
+					<p class="mem">Already Member?<span><a href="#" class="below act_login"> Login</a></span></p>
+				</form>
+			</div>
+		</main>
+	</div>
+
+
+
+<!-- forgot password
+	<div id="forgot_password_page">
+		<main>
+			<section class="section-a">
+				<div class="left-section">
+					<h2 class="left-title">HI THERE!</h2>
+
+					<p class="together">Enter your email,<br/>and get a password activation link<br/><br/><span style="font-size: 1.3rem; color: #c4c4c4;">OR</span></p>
+					<a href="#" class="btn-login act_login">LOGIN</a>
+				</div>
+			</section>
+
+			<div class="containertwo2">
+				<p class="head page2">RECOVER YOUR PASSWORD</p>
+				<p class="head page2">HI THERE!</p>
+				<p class="sub">Enter your email to recover your password!</p>
+				<form method="post" action="process.php">
+					<input type="email" name="email" placeholder="FirstName" required="required" class="has-shadow"/>
+					<button class="has-shadow" name="recover" id="submit" value="Submit">Submit</button>
+					<p class="mem">Already Member?<span><a href="#" class="below act_login"> Login</a></span></p>
+				</form>
+			</div>
+		</main>
+	</div>-->
+
+
+
+
+	<script type="text/javascript" src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script  src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ 	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#signup_page, #forgot_password_page').hide();
+		$('.act_signup').click(function(){
+			$('#login_page, #forgot_password_page').hide();
+			$('#signup_page').show();
+			$('title').html('SIGNUP');
+		});
+
+		$('.act_login').click(function(){
+			$('#signup_page, #forgot_password_page').hide();
+			$('#login_page').show();
+			$('title').html('LOGIN');
+		});
+/*			$('.act_forgotpass').click(function(){
+			$('#signup_page, #login_page').hide();
+			$('#forgot_password_page').show();
+			$('title').html('LOGIN');
+		});*/
+
+	});
+
+		var submit_details = document.getElementById('submit');
+		var email = document.getElementById('email');
+		var passwrd = document.getElementById('passwrd'), cpasswrd = document.getElementById('cpasswrd');
+		var regEx = /^[a-zA-Z]{3,}[\.]{0,1}[a-zA-Z]{0,}[0-9]{0,}[a-zA-Z]{0,}\@[a-zA-Z]{5,}\.[a-zA-Z]/;	
+	submit_details.addEventListener('click', function (e){
+		
+
+
+		if (!email.value.match(regEx)) {
+		 	e.preventDefault(e);
+			alert('Please enter a valid email address!');
+			return;
+		}else if (passwrd.value.length < 6  && cpasswrd.value.length < 6) {
+			e.preventDefault();
+			alert('Passwords too short!');
+			return;
+		}
+		else if(passwrd.value !== cpasswrd.value){
+			e.preventDefault(e);
+			alert('Passwords do not match!');
+			return;
+		}
+	})
+	</script>
 </body>
 </html>
