@@ -202,7 +202,6 @@ a.btn-login:hover, a.btn-signup:hover, button:hover{
 		  display: flex;
 		  flex-direction:column;
 		  justify-content:center;
-  
 	  }
 	  .containertwo p:nth-child(2), .containertwo2 p:nth-child(2){
 	  	display: block;
